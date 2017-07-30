@@ -2,23 +2,28 @@ import * as React from 'react';
 import styles from './SpFxCodeEditor.module.scss';
 import { ISpFxCodeEditorProps } from './ISpFxCodeEditorProps';
 import { escape } from '@microsoft/sp-lodash-subset';
+import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
+
+import * as brace from 'brace';
+import ReactAce from 'react-ace';
+
+import  'brace/mode/javascript';
+import  'brace/theme/monokai';
 
 export default class SpFxCodeEditor extends React.Component<ISpFxCodeEditorProps, void> {
   public render(): React.ReactElement<ISpFxCodeEditorProps> {
     return (
-      <div className={styles.spFxCodeEditor}>
-        <div className={styles.container}>
-          <div className={`ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <span className="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
-              <p className="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
-              <p className="ms-font-l ms-fontColor-white">{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={styles.button}>
-                <span className={styles.label}>Learn more</span>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div>
+        <CommandBar
+        items={[]}
+        />
+      <ReactAce
+      width="100%"
+        mode="javascript"
+            theme="monokai"
+            name="UNIQUE_ID_OF_DIV"
+            editorProps={{ $blockScrolling:  true }}
+      />
       </div>
     );
   }
