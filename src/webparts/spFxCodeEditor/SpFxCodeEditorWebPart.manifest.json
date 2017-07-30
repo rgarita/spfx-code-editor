@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "e1f1df15-acfd-4401-8b95-c4e8277b973e",
+  "alias": "SpFxCodeEditorWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "e1f1df15-acfd-4401-8b95-c4e8277b973e",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SPFxCodeEditor" },
+    "description": { "default": "SPFxCodeEditor description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "SPFxCodeEditor"
+    }
+  }]
+}

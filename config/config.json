@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/spFxCodeEditor/SpFxCodeEditorWebPart.js",
+      "manifest": "./src/webparts/spFxCodeEditor/SpFxCodeEditorWebPart.manifest.json",
+      "outputPath": "./dist/sp-fx-code-editor.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "spFxCodeEditorStrings": "webparts/spFxCodeEditor/loc/{locale}.js"
+  }
+}

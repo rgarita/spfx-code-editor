@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-code-editor-client-side-solution",
+    "id": "26bdf3d7-9ddd-435f-9e70-79aae98cd9b4",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-code-editor.sppkg"
+  }
+}
