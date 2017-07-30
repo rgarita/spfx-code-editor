@@ -6,7 +6,6 @@ import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 
 import * as brace from 'brace';
 import ReactAce from 'react-ace';
-
 import  'brace/mode/javascript';
 import  'brace/theme/monokai';
 
